@@ -1,8 +1,8 @@
-# Personal Project & Work Record Templates
+# Personal Record Templates
 
 面向 Obsidian 的轻量化 Markdown 模板集合，覆盖日常记录、周度汇总、月度复盘和项目研发档案。
 
-**新版以 `templates/` 下的四份模板为准。** 旧版拆分式项目模板已移入 `legacy/` 留作参考，不再作为默认使用方案。
+**统一使用 `templates/` 下的四份模板。** 项目记录采用单文件融合版，避免维护大量拆分文件。
 
 ## 模板目录
 
@@ -41,15 +41,13 @@
 ## 版本结构
 
 ```text
-personal-project-record-templates/
+repository/
 ├── README.md
 ├── templates/
 │   ├── daily-log.md
 │   ├── weekly-report.md
 │   ├── monthly-summary.md
-│   └── project-record.md
-└── legacy/
-    └── modular-project-template/   # 旧版拆分式项目模板，仅作历史参考
+    └── project-record.md
 ```
 
 ## 记录原则
@@ -60,6 +58,3 @@ personal-project-record-templates/
 - 保留证据：重要结果尽量关联代码提交、测试报告、实验数据或文档路径。
 - 注意保密：本仓库为公开仓库。不要提交公司内部资料、客户信息、账号口令、Token、密钥或未经授权的项目材料。
 
----
-
-旧版拆分模板保留在 [`legacy/modular-project-template/`](legacy/modular-project-template/) 中。如无特殊需要，直接使用 `templates/` 下的四份新版模板即可。
