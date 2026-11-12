@@ -47,7 +47,7 @@ repository/
 │   ├── daily-log.md
 │   ├── weekly-report.md
 │   ├── monthly-summary.md
-    └── project-record.md
+│   └── project-record.md
 ```
 
 ## 记录原则
