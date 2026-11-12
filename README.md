@@ -1,2 +1,65 @@
-# personal-project-record-templates
-Markdown templates for personal R&D project documentation, progress tracking, testing, change history, and delivery records.
+# Personal Project & Work Record Templates
+
+面向 Obsidian 的轻量化 Markdown 模板集合，覆盖日常记录、周度汇总、月度复盘和项目研发档案。
+
+**新版以 `templates/` 下的四份模板为准。** 旧版拆分式项目模板已移入 `legacy/` 留作参考，不再作为默认使用方案。
+
+## 模板目录
+
+| 模板 | 文件 | 用途 |
+|---|---|---|
+| 日报 | [`daily-log.md`](templates/daily-log.md) | 记录今日安排、实际工作、AI 讨论、个人记录和日终回顾 |
+| 周报 | [`weekly-report.md`](templates/weekly-report.md) | 按项目 / 模块合并本周进展，整理问题、成果和下周计划 |
+| 月度总结 | [`monthly-summary.md`](templates/monthly-summary.md) | 以周一至周日的日历网格回顾工作与个人生活，并汇总月度成果 |
+| 项目档案 | [`project-record.md`](templates/project-record.md) | 将项目背景、需求、架构、任务、研发日志、问题、实验、验收和结项信息整合在一份主档案中 |
+
+## 推荐使用方式
+
+1. **每天使用日报。** 记录实际做过的工作和个人安排；AI 对话按主题合并，不把讨论或计划误记为已完成成果。
+2. **每周使用周报。** 从日报中按项目 / 模块归并进展，不按日期重复抄写；保留未完成、待验证和阻塞事项。
+3. **每月使用月度总结。** 先整理日历，再归并项目成果、个人学习生活、问题改进和下月计划。
+4. **每个长期项目使用一份项目档案。** 平时优先维护“三分钟更新区”和研发日志；只有遇到复杂问题、正式实验、阶段验收或结项时，才展开对应章节。
+
+不需要每天填写项目档案的全部章节，也不需要为每个小问题单独创建文档。模板中的“按需填写 / 按需复制”章节只在实际需要时使用。
+
+## 在 Obsidian 中使用
+
+1. 将 `templates/` 目录中的 Markdown 文件复制到 Vault 内的模板文件夹，例如 `Templates/`。
+2. 在 Obsidian 设置中启用核心插件 **Templates（模板）**。
+3. 在 **设置 → 核心插件 → 模板** 中，将“模板文件夹位置”设置为刚才的文件夹。
+4. 新建日报、周报、月度总结或项目档案时，使用命令面板执行 **插入模板**，选择对应文件。
+
+模板中的 `{{date:...}}` 为 Obsidian 核心模板日期占位符。日报、周报和月度总结会按插入时的日期生成标题或元数据；周报按 ISO 周编号命名。
+
+### 显示与填写说明
+
+- 模板正文为中文，文件名和目录名使用英文，便于跨平台管理。
+- 日报中的 `[ ]` 是 Markdown 任务标记。表格内的任务标记如需点击交互，可按模板说明安装相应社区插件；否则可在编辑模式中手动改为 `[x]`。
+- 月度总结使用七列表格呈现日历。生成月度内容时，需按实际年月校准日期位置，不要直接把日期按纵向清单排列。
+- 项目档案中的空白章节不代表必须填写；不适用的内容可写 `N/A`，尚未确认的内容写“待确认”。
+
+## 版本结构
+
+```text
+personal-project-record-templates/
+├── README.md
+├── templates/
+│   ├── daily-log.md
+│   ├── weekly-report.md
+│   ├── monthly-summary.md
+│   └── project-record.md
+└── legacy/
+    └── modular-project-template/   # 旧版拆分式项目模板，仅作历史参考
+```
+
+## 记录原则
+
+- 轻量记录优先：日常只写目标、动作、结果、证据和下一步。
+- 事实与计划分开：AI 建议、待办和方案讨论不能直接算作已完成。
+- 区分实现与验证：已实现不等于已验证；仿真结果不等于真机验收。
+- 保留证据：重要结果尽量关联代码提交、测试报告、实验数据或文档路径。
+- 注意保密：本仓库为公开仓库。不要提交公司内部资料、客户信息、账号口令、Token、密钥或未经授权的项目材料。
+
+---
+
+旧版拆分模板保留在 [`legacy/modular-project-template/`](legacy/modular-project-template/) 中。如无特殊需要，直接使用 `templates/` 下的四份新版模板即可。
